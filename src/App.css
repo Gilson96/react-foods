@@ -28,7 +28,7 @@ html .swiper-button-next {
     stroke-dashoffset: 166;
     stroke-width: 2;
     stroke-miterlimit: 10;
-    stroke: #facc15;
+    stroke: #bef264;
     fill: none;
     animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards
 }
@@ -42,7 +42,7 @@ html .swiper-button-next {
     stroke: #fff;
     stroke-miterlimit: 10;
     margin: 10% auto;
-    box-shadow: inset 0px 0px 0px #facc15;
+    box-shadow: inset 0px 0px 0px #bef264;
     animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both
 }
 
@@ -52,6 +52,7 @@ html .swiper-button-next {
     stroke-dashoffset: 48;
     animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards
 }
+
 
 @keyframes stroke {
     100% {
@@ -73,6 +74,6 @@ html .swiper-button-next {
 
 @keyframes fill {
     100% {
-        box-shadow: inset 0px 0px 0px 30px #facc15
+        box-shadow: inset 0px 0px 0px 30px #bef264
     }
 }

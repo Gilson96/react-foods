@@ -1,14 +1,14 @@
-import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import LandingPage from './components/LadingPage'
+import background from './Assets/background.jpg';
+import useScreenSize from './features/useScreenSize';
 
 function App() {
-  return (
-    <div className='bg-cover bg-no-repeat bg-center overflow-hidden w-screen h-screen bg-white'>
+  const screenSize = useScreenSize()
 
-      <Routes>
-        <Route path='/' element={<LandingPage />} />
-      </Routes>
+  return (
+    <div className={`bg-lime-200 w-full ${screenSize.width < 1000 ? 'h-screen' : 'h-full' } flex justify-center items-center `}>
+      <LandingPage/>
     </div>
   );
 }

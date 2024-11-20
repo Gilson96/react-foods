@@ -10,9 +10,9 @@ const LadingPage = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
 
   return (
-    <div>
+    <div className='backdrop-blur-xl bg-white/50 h-[98%] w-[98%] rounded-lg'>
       <Navigator onOpen={onOpen} />
-      <CartCheckout isOpen={isOpen} onClose={onClose} cart={cart}/>
+      <CartCheckout isOpen={isOpen} onClose={onClose} cart={cart} />
       <Main />
     </div>
   )

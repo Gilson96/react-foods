@@ -1,5 +1,5 @@
 import { useEffect } from 'react'
-import deliveryAnimationGif from '../Assets/deliveryAnimation.gif'
+import deliveryAnimationGif from '../Assets/giphy.gif'
 
 const DeliveryAnimation = ({setFeedback}) => {
 
@@ -14,8 +14,9 @@ const DeliveryAnimation = ({setFeedback}) => {
     }, []); // Empty dependency array ensures the effect runs only once   
 
     return (
-        <div>
+        <div className='w-full h-full flex flex-col justify-center items-center'>
             <img src={deliveryAnimationGif} alt='delivery' />
+            <p>Preparing your order...</p>
         </div>
     )
 }

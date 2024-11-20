@@ -1,23 +1,21 @@
-import React from 'react'
 import { ShoppingBagIcon } from '@heroicons/react/24/solid'
 import { useSelector } from 'react-redux'
 
 const Navigator = ({ onOpen }) => {
-
   const food = useSelector((state) => state.cart)
-  console.log(food)
 
   return (
-    <div className='w-full h-full flex p-[2%] justify-between'>
-      <p className='font-bold text-xl'>React-f<span className='text-orange-300'>oo</span>ds</p>
-      <div className='flex justify-center items-center gap-5 w-auto border-4 border-black px-[1%] py-[1px] rounded-full bg-white'>
-        <div onClick={onOpen}>
-          <ShoppingBagIcon className='h-7 w-7 text-slate-700 cursor-pointer' />         
-            <p className={`flex justify-center items-center w-auto h-auto px-[6px] bg-white absolute border border-black top-[3%] right-[3%] rounded-full text-black`}>{food === undefined ? 0 : food.cart.length}</p>
-        </div>
+    <div onClick={onOpen} className='flex p-[2%] justify-between items-center cursor-pointer'>
+      {/* logo */}
+      <p className='font-bold text-3xl'>React-f<span className='text-lime-500'>oo</span>ds</p>
+
+      {/* cart */}
+      <div className='flex justify-center items-center w-auto border-4 border-slate-500 px-[1%] py-[1px] rounded-full bg-white'>
+        <p className={`flex justify-center items-center w-[1.5rem] bg-lime-600 border rounded-full text-white text-base font-bold`}>{food === undefined ? 0 : food.cart.length}</p>
+        <ShoppingBagIcon className='h-7 w-7 text-slate-500 cursor-pointer' />
       </div>
+
     </div>
   )
 }
-
 export default Navigator

@@ -23,7 +23,6 @@ export const cartSlice = createSlice({
           image: action.payload.image,
           name: action.payload.name,
           price: action.payload.price,
-          description: action.payload.description,
           quantity: action.payload.quantity + 1,
         });
       }
