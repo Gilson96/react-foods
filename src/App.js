@@ -1,6 +1,5 @@
 import './App.css';
 import LandingPage from './components/LadingPage'
-import background from './Assets/background.jpg';
 import useScreenSize from './features/useScreenSize';
 
 function App() {
