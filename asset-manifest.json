@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/react-foods/static/css/main.452837db.css",
+    "main.js": "/react-foods/static/js/main.453ca8d3.js",
+    "static/media/burger.png": "/react-foods/static/media/burger.f427d5da57ccb2b8d26e.png",
+    "static/media/icecream.png": "/react-foods/static/media/icecream.a11f88886442317d4a77.png",
+    "static/media/giphy.gif": "/react-foods/static/media/giphy.4115a4fe4f7f114673d1.gif",
+    "static/media/pasta.png": "/react-foods/static/media/pasta.660abb53547b214881dd.png",
+    "static/media/pizza.png": "/react-foods/static/media/pizza.8b0f6f862a113a7c0a97.png",
+    "static/media/drink.png": "/react-foods/static/media/drink.135b3ba922ea63f1ee51.png",
+    "static/media/chicken.png": "/react-foods/static/media/chicken.abf4569c86d566dde08b.png",
+    "index.html": "/react-foods/index.html",
+    "main.452837db.css.map": "/react-foods/static/css/main.452837db.css.map",
+    "main.453ca8d3.js.map": "/react-foods/static/js/main.453ca8d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.452837db.css",
+    "static/js/main.453ca8d3.js"
+  ]
+}
