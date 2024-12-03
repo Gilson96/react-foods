@@ -9,9 +9,11 @@ import { Navigation } from 'swiper/modules';
 import { addToCart } from '../features/cartSlice'
 import { useDispatch } from 'react-redux';
 import Card from './UI/Card'
+import useScreenSize from '../features/useScreenSize'
 
 const FoodMenu = ({ setImage, slidesPerView, spaceBetween }) => {
     const dispatch = useDispatch()
+    const screenSize = useScreenSize()
 
     return (
         <Swiper
@@ -19,14 +21,15 @@ const FoodMenu = ({ setImage, slidesPerView, spaceBetween }) => {
             modules={[Navigation]}
             slidesPerView={slidesPerView}
             spaceBetween={spaceBetween}
-            className="h-full w-full flex"
+            grabCursor={true}
+            className={`h-full w-full flex`}
         >
             {data.map((data, index) => (
                 <SwiperSlide
                     style={{display:'flex', justifyContent:'center', alignItems:'center'}}
                     key={index}
                 >
-                    <div className='flex justify-center items-center'>
+                    <div className='flex justify-center items-center cursor-grab'>
                     <Card
                         foodName={data.name}
                         foodImage={data.image}
