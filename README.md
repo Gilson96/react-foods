@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# React-foods
+> This web-app allows the user to order any food in the available menu list
+> Live demo [_here_](https://gilson96.github.io/react-foods/).
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Technologies Used
+- React - version 18.0
+- Chakra-ui - version 2.8
+- Redux-toolkit - version 2.2.7
+- Tailwindcss - version 3.1
+- Nodejs - version 20.15.1
+- MongoDB - version 6.8
+- Mongoose - version 8.6
+- Framer-motion - version 7.1
+- git and gh-pages
 
-## Available Scripts
+## Features
+List the ready features here:
+- Add/remove food to/from the checkout
+- Search available food
 
-In the project directory, you can run:
+## Screenshots
+![Example screenshot](https://github.com/Gilson96/react-foods/blob/master/src/Assets/project_top.png)
+![Example screenshot](https://github.com/Gilson96/react-foods/blob/master/src/Assets/project_checkout.png)
+![Example screenshot](https://github.com/Gilson96/react-foods/blob/master/src/Assets/project_preparing.png)
+![Example screenshot](https://github.com/Gilson96/react-foods/blob/master/src/Assets/project_success.png)
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Setup
+1. Create a local directory on your machine
+2. Run the following code in your command line to navigate into that directory: 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+```shell 
+$ cd ~/your-directory-name-here
+```
+3. Copy the SSH key from this GitHub repository `git@github.com:Gilson96/react-foods.git`
 
-### `npm test`
+4. Run the following code in your command line to clone the repo to your machine (you can change the app-name to what you desire):  
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```shell 
+git clone git@github.com:Gilson96/react-foods.git <app-name>
+```
+5. Navigate to your new app directory (the app name you just picked):
 
-### `npm run build`
+```shell 
+$ cd app-name
+```
+6. Install the dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```shell 
+npm i
+```
+7. Run the following command to launch the app in your default browser at http://localhost:3000/:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```shell 
+npm start
+```
+8. Enjoy
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Room for Improvement
+- [ ] Refactor
+- [ ] Add TypeScript
+- [ ] Add Testing
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
